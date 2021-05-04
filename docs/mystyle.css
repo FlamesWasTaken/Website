@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Nunito;
+  src: url(Nunito-SemiBoldItalic.ttf);
+}
 .topcenter {
   margin: 0;
   position: absolute;
