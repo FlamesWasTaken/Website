@@ -12,8 +12,15 @@
 
 <div class="container">
   <div class="topcenter">
-	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript">
+		function onClick(){clicks++;}
+	</script>
     <button type="button" onClick ="onClick();" id="push"> Click </button>
+	<header class="center"> 
+      <script type="text/javascript">
+        document.write(clicks)
+      </script>
+	</header>
   </div>
 </div>
 
