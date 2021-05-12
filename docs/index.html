@@ -12,11 +12,11 @@
 <body>
 
 <script type="text/javascript">
-	function onClick() {
-		clicks++;
-		document.getElementById("display").innerHTML = clicks;
-	}
+	function onClick() {clicks++;}
 	function docWrite(variable) {document.write(variable);}
+	var t = setInterval(function() {
+		document.getElementById("display").innerHTML = clicks;
+	}, 500);
 </script>
 
 <div class="container">
