@@ -12,7 +12,7 @@
 <body>
 
 <script type="text/javascript">
-	function onClick() {clicks++;}
+	function Click() {clicks++;}
 	function docWrite(variable) {document.write(variable);}
 	setInterval(function() {
 		document.getElementById("display").innerHTML = clicks;
@@ -21,7 +21,7 @@
 
 <div class="container">
   <div class="topcenter">
-    <button type="button" onClick ="onClick();" id="push"> Click </button>
+    <button type="button" onClick ="Click();" id="push"> Click </button>
   </div>
 </div>
 <div class="center" id="display"> <header> Clicks: <script type="text/javascript">docWrite(clicks)</script></header> </div>
