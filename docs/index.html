@@ -14,11 +14,9 @@
 <script type="text/javascript">
 	function Click() {
 		var Clicks = Clicks + 1
+		document.getElementById("display").innerHTML = clicks;
 	}
 	function docWrite(variable) {document.write(variable);}
-	setInterval(function() {
-		document.getElementById("display").innerHTML = clicks;
-	}, 500);
 </script>
 
 <div class="container">
