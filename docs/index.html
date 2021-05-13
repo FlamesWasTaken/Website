@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="mystyle.css">
@@ -16,7 +17,7 @@
 	document.getElementById("push").onClick = clicked()
 	function clicked() {
 		var Clicks = Clicks + 1
-		var displayClicks = document.getElementById("display").innerHTML = clicks;
+		document.getElementById("display").innerHTML = "Clicks: " + clicks;
 	}
 	function docWrite(variable) {document.write(variable);}
 </script>
