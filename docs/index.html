@@ -14,7 +14,6 @@
 
 <script type="text/javascript">
 	var clicks = 1
-	document.getElementById("push").onClick = clicked()
 	function clicked() {
 		var Clicks = Clicks + 1
 		document.getElementById("display").innerHTML = "Clicks: " + clicks;
@@ -24,7 +23,7 @@
 
 <div class="container">
   <div class="topcenter">
-    <button type="button" id="push"> Click </button>
+    <button type="button" onclick="clicked"> Click </button>
   </div>
 </div>
 <div class="center"> <header id="display"> Clicks: <script type="text/javascript">docWrite(clicks)</script></header> </div>
