@@ -12,7 +12,8 @@
 <body>
 
 <script type="text/javascript">
-	document.getElementById("push").onclick = function () {
+	document.getElementById("push").onclick = clicked()
+	function clicked() {
 		var Clicks = Clicks + 1
 		var displayClicks = document.getElementById("display").innerHTML = clicks;
 	}
