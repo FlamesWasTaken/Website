@@ -12,7 +12,10 @@
 <body>
 
 <script type="text/javascript">
-	var clicks = 1
+	function Click() {
+		var Clicks = Clicks + 1
+		var displayClicks = document.getElementById("display").innerHTML = clicks;
+	}
 	function docWrite(variable) {document.write(variable);}
 </script>
 
@@ -21,7 +24,7 @@
     <button type="button" onClick ="Click();" id="push"> Click </button>
   </div>
 </div>
-<div class="center" id="display"> <header> Clicks: <script type="text/javascript">docWrite(clicks)</script></header> </div>
+<div class="center"> <header id="display"> Clicks: <script type="text/javascript">docWrite(clicks)</script></header> </div>
 
 </body>
 </html>
