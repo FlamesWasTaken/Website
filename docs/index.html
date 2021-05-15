@@ -14,7 +14,7 @@
 	var clicks = 1
 	function clicked() {
 		clicks = clicks + 1
-		if (clicks >= 9999); {
+		if (clicks > 9999); {
 			document.getElementById("display").innerHTML = "Clicks: " + numberFormat(clicks)
 			stop
 		}
