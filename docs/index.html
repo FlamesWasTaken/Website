@@ -14,7 +14,7 @@
 	var clicks = 1
 	function clicked() {
 		clicks = clicks + 1
-		String(clicks).replace(/(.)(?=(\d{3})+$)/g,'$1,')
+		formatNumber(clicks)
 		document.getElementById("display").innerHTML = "Clicks: " + clicks;
 	}
 	function docWrite(variable) {document.write(variable);}
