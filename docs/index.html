@@ -15,10 +15,18 @@
 <script type="text/javascript">
 	var clicks = 1
 	function clicked() {
+		if (clicks == 20) {
+			popup();
+			<span class="popuptext" id="myPopup">YAY! You got 20 Clicks!</span>
+		}
 		clicks = clicks + 1
 		document.getElementById("display").innerHTML = "Clicks: " + clicks;
 	}
 	function docWrite(variable) {document.write(variable);}
+	function popup() {
+		var popup = document.getElementById("myPopup");
+		popup.classList.toggle("show");
+	}
 </script>
 
 <div class="container">
