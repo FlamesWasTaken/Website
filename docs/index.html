@@ -16,7 +16,7 @@
 		clicks = clicks + 1
 		clicks.toString()
 		document.getElementById("display").innerHTML = "Clicks: " + clicks;
-		String(clicks).replace(/(.)(?=(\d{3})+$)/g,'$1,')
+		clicks.replace(/(.)(?=(\d{3})+$)/g,'$1,')
 	}
 	function docWrite(variable) {document.write(variable);}
 </script>
