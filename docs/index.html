@@ -12,11 +12,15 @@
 
 <script type="text/javascript">
 	var clicks = 1
+	var nf = Intl.NumberFormat();
 	function clicked() {
 		clicks = clicks + 1
 		if (clicks >= 999);
-			(clicks).toLocaleString('en-US')
-		document.getElementById("display").innerHTML = "Clicks: " + clicks;
+			
+			document.getElementById("display").innerHTML = "Clicks: " + nf.format(clicks);
+			stop
+		elif (clicks <= 999);
+			document.getElementById("display").innerHTML = "Clicks: " + clicks
 	}
 	function docWrite(variable) {document.write(variable);}
 </script>
