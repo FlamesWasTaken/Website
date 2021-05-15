@@ -13,11 +13,12 @@
 <body>
 
 <script type="text/javascript">
+	popup.classList.toggle("hide");
 	var clicks = 1
 	function clicked() {
 		if (clicks == 20) {
 			popup();
-			<span class="popuptext" id="myPopup">YAY! You got 20 Clicks!</span>
+			<normaltext class="popuptext" id="myPopup">YAY! You got 20 Clicks!</normaltext>
 		}
 		clicks = clicks + 1
 		document.getElementById("display").innerHTML = "Clicks: " + clicks;
@@ -26,6 +27,11 @@
 	function popup() {
 		var popup = document.getElementById("myPopup");
 		popup.classList.toggle("show");
+    	setTimeout(function () {
+        	if (newState == -1) {
+            	popup.classList.toggle("hide");
+        	}
+    	}, 5000);
 	}
 </script>
 

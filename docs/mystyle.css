@@ -32,6 +32,10 @@ body {
 header {
 	font-family: 'Nunito';font-size: 50px;
 }
+normaltext {
+	font-family: 'Nunito';font-size: 20px;
+	color: #fff
+}
 .popup {
   position: relative;
   display: inline-block;
