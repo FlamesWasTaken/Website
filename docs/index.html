@@ -12,17 +12,14 @@
 
 <script type="text/javascript">
 	var clicks = 1
-	var nf = Intl.NumberFormat();
 	function clicked() {
 		clicks = clicks + 1
-		if (clicks >= 999);
-			
-			document.getElementById("display").innerHTML = "Clicks: " + nf.format(clicks);
-			stop
-		if (clicks <= 999);
-			document.getElementById("display").innerHTML = "Clicks: " + clicks
+		document.getElementById("display").innerHTML = "Clicks: " + numberFormat(clicks)
 	}
 	function docWrite(variable) {document.write(variable);}
+	function numberFormat(num) {
+		return Math.abs(num) > 999 ? Math.sign(num)*((Math.abs(num)/1000).toFixed(1)) + 'k' : Math.sign(num)*Math.abs(num)
+	}
 </script>
 
 <button class="big-btn" type="button" onclick="clicked()"> Click </button>
