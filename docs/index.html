@@ -14,6 +14,7 @@
 	var clicks = 1
 	function clicked() {
 		clicks = clicks + 1
+		clicks.toString()
 		document.getElementById("display").innerHTML = "Clicks: " + clicks;
 		String(clicks).replace(/(.)(?=(\d{3})+$)/g,'$1,')
 	}
