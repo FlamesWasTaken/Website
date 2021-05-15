@@ -35,38 +35,38 @@ header {
 normaltext {
 	font-family: 'Nunito';font-size: 20px;
 }
-    .button {
-        background-color: #000000;
-        color: #FFFFFF;
-        padding: 10px;
+	.button {
+		background-color: #000000;
+		color: #FFFFFF;
+		padding: 10px;
 		top: 10%;
 		left: 50%;
-        border-radius: 10px;
-        -moz-border-radius: 10px;
-        -webkit-border-radius: 10px;
-        margin:10px
-    }
-    
-    .small-btn {
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		margin:10px
+	}
+	
+	.small-btn {
 		top: 10%;
 		left: 50%;
-        width: 50px;
-        height: 25px;
-    }
-    
-    .medium-btn {
+		width: 50px;
+		height: 25px;
+	}
+	
+	.medium-btn {
 		top: 10%;
 		left: 50%;
-        width: 70px;
-        height: 30px;
-    }
-    
-    .big-btn {
+		width: 70px;
+		height: 30px;
+	}
+	
+	.big-btn {
 		top: 10%;
 		left: 50%;
-        width: 90px;
-        height: 40px;
-    }
+		width: 90px;
+		height: 40px;
+	}
 
 
 
