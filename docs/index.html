@@ -16,10 +16,9 @@
 		clicks = clicks + 1
 		if (clicks >= 9999); {
 			document.getElementById("display").innerHTML = "Clicks: " + numberFormat(clicks)
+			stop
 		}
-		if (clicks <= 9999); {
-			document.getElementById("display").innerHTML = "Clicks: " + clicks
-		}
+		document.getElementById("display").innerHTML = "Clicks: " + clicks
 	}	
 	function docWrite(variable) {document.write(variable);}
 	function numberFormat(num) {
