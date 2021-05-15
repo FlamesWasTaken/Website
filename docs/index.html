@@ -14,7 +14,8 @@
 	var clicks = 1
 	function clicked() {
 		clicks = clicks + 1
-		(clicks).toLocaleString('hi-IN')
+		if (clicks >= 999);
+			(clicks).toLocaleString('hi-IN')
 		document.getElementById("display").innerHTML = "Clicks: " + clicks;
 	}
 	function docWrite(variable) {document.write(variable);}
