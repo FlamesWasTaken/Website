@@ -24,7 +24,7 @@
 
 	function docWrite(variable) {document.write(variable);}
 
-	function numberFormat(num) {return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");}
+	function numberFormat(num) {return num.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");;}
 </script>
 
 <button class="big-btn" type="button" onclick="clicked()"> Click </button>
