@@ -13,7 +13,6 @@
 <script type="text/javascript">
 	var multiplyer = 1
 	var clicks = 1
-	var Format = true
 	function clicked() {
 		clicks = clicks + multiplyer
 		if (clicks < 9999); {
@@ -25,38 +24,12 @@
 
 	function docWrite(variable) {document.write(variable);}
 
-	function change() {
-		if (Format == true); {
-			var Format = false
-			document.getElementById("display").innerHTML = "Clicks: " + numberFormat(clicks)
-		}
-		if (Format == false); {
-			var Format = true
-			document.getElementById("display").innerHTML = "Clicks: " + numberFormat(clicks)
-		}
-	}
-
 	function numberFormat(num) {
-		if (Format == true); {
-			if (num >= 1000000000) {
-			   return (num / 1000000000).toFixed(1).replace(/\.0$/, '') + 'b';
-			}
-			if (num >= 1000000) {
-			   return (num / 1000000).toFixed(1).replace(/\.0$/, '') + 'm';
-			}
-			if (num >= 1000) {
-			   return (num / 1000).toFixed(1).replace(/\.0$/, '') + 'k';
-			}
-			return num;
-		}
-		if (Format == false); {
-			return num.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
-		}
+		return num.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
 	}
 </script>
 
 <button class="big-btn" type="button" onclick="clicked()"> Click </button>
-<button class="small-btn" type="button" onclick="change()"> Change Number Format (K/1,000) </button>
 <div class="center"> <header id="display"> Clicks: <script type="text/javascript">docWrite(clicks)</script></header> </div>
 
 </body>
