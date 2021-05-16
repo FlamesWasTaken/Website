@@ -11,7 +11,8 @@
 <body>
 
 <script type="text/javascript">
-	var clicks = 1
+	var multiplyer = 1
+	var clicks = {multiplyer}
 	function clicked() {
 		clicks = clicks + 1
 		if (clicks < 9999); {
@@ -19,20 +20,11 @@
 			return;
 		}
 		document.getElementById("display").innerHTML = "Clicks: " + clicks
-	}	
-	function docWrite(variable) {document.write(variable);}
-	function numberFormat(num) {
-		if (num >= 1000000000) {
-		   return (num / 1000000000).toFixed(1).replace(/\.0$/, '') + 'b';
-		}
-		if (num >= 1000000) {
-		   return (num / 1000000).toFixed(1).replace(/\.0$/, '') + 'm';
-		}
-		if (num >= 1000) {
-		   return (num / 1000).toFixed(1).replace(/\.0$/, '') + 'k';
-		}
-		return num;
 	}
+
+	function docWrite(variable) {document.write(variable);}
+
+	function numberFormat(num) {return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");}
 </script>
 
 <button class="big-btn" type="button" onclick="clicked()"> Click </button>
