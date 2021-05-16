@@ -60,11 +60,6 @@ normaltext {
 		left: 10%;
 		-ms-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
-		position: absolute;
-		top: 10%;
-		left: 50%;
-		-ms-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
 		font-family: 'Nunito';font-size: 10px;
 		width: 50px;
 		height: 25px;
