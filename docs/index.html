@@ -12,9 +12,9 @@
 
 <script type="text/javascript">
 	var multiplyer = 1
-	var clicks = {multiplyer}
+	var clicks = 1
 	function clicked() {
-		clicks = clicks + 1
+		clicks = clicks + {multiplyer}
 		if (clicks < 9999); {
 			document.getElementById("display").innerHTML = "Clicks: " + numberFormat(clicks)
 			return;
@@ -24,7 +24,7 @@
 
 	function docWrite(variable) {document.write(variable);}
 
-	function numberFormat(num) {return num}
+	function numberFormat(num) {return num.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");}
 </script>
 
 <button class="big-btn" type="button" onclick="clicked()"> Click </button>
