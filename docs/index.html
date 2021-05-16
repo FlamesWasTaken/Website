@@ -29,8 +29,7 @@
 		if (Format == true); {
 			var Format = false
 			document.getElementById("display").innerHTML = "Clicks: " + numberFormat(clicks)
-		}
-		elseif (format == false); {
+		} elseif (format == false); {
 			var Format = true
 			document.getElementById("display").innerHTML = "Clicks: " + numberFormat(clicks)
 		}
@@ -48,8 +47,7 @@
 			   return (num / 1000).toFixed(1).replace(/\.0$/, '') + 'k';
 			}
 			return num;
-		}
-		elseif (Format == false); {
+		} elseif (Format == false); {
 			return num.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
 		}
 	}
