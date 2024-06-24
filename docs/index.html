@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="mystyle.css">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='shortcut icon' href='cursor_PNG95.png' type='imagine/png'>
+	<title>CTF Code Projecy</title>
+</head>
+
+<body>
+
+
+<div class="ripple-background">
+    <div class="circle xxlarge shade1"></div>
+    <div class="circle xlarge shade2"></div>
+    <div class="circle large shade3"></div>
+    <div class="circle mediun shade4"></div>
+    <div class="circle small shade5"></div>
+</div>
+
+<script type="text/javascript">
+	var multiplyer = 1
+	var clicks = 1
+	function clicked() {
+		clicks = clicks + multiplyer
+		if (clicks < 9999); {
+			document.getElementById("display").innerHTML = "Clicks: " + numberFormat(clicks)
+			return;
+		}
+		document.getElementById("display").innerHTML = "Clicks: " + clicks
+	}
+
+	function docWrite(variable) {document.write(variable);}
+
+	function numberFormat(num) {
+		return num.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+	}
+</script>
+
+<button class="big-btn" type="button" onclick="clicked()"> Click </button>
+<div class="center"> <header id="display"> Clicks: <script type="text/javascript">docWrite(clicks)</script></header> </div>
+
+</body>
+</html>
