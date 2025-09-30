@@ -40,12 +40,12 @@
 			clicks = clicks - (cost)
 			multiplyer = multiplyer + 1
 			cost = cost + 100
+			document.getElementById("display-2").innerHTML = "Multi: " + multiplyer
             return;
 		}
 		elseif (clicks < cost); {
 			return;
 		}
-		document.getElementById("display-2").innerHTML = "Multi: " + multiplyer
     }
 
 	function numberFormat(num) {
