@@ -23,7 +23,7 @@
 <script type="text/javascript">
 	var multiplyer = 1
 	var clicks = 1
-	var level = 1
+	var cost = 100
 	function clicked() {
 		clicks = clicks + multiplyer
 		if (clicks < 9999); {
@@ -36,13 +36,15 @@
 	function docWrite(variable) {document.write(variable);}
 
 	function multi() {
-		if (clicks >= multiplyer  * 100); {
-			clicks = clicks - (multiplyer * 100)
+		if (clicks >= cost); {
+			clicks = clicks - (cost)
 			multiplyer = multiplyer + 1
+			cost = cost + 100
             return;
-		elseif (clicks < multiplyer * level * 100); {
+		elseif (clicks < cost); {
 			return;
 		}
+		document.getElementById("display").innerHTML = "Multi: " + multi
     }
 }
 
