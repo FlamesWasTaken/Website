@@ -17,6 +17,7 @@
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
 .right {
   margin: 0;
   position: absolute;
@@ -82,7 +83,7 @@ normaltext {
 	
 	.sec-btn {
 		position: absolute;
-		top: 30%;
+		top: 20%;
 		left: 50%;
 		background-color: #3399ff; 
 		border-radius: 12px;
