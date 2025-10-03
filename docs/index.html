@@ -25,7 +25,7 @@
 	var clicks = 1
 	var cost = 100
 	function clicked() {
-		clicks = clicks + multiplyer
+		this.clicks = clicks + multiplyer
 		if (clicks < 9999); {
 			document.getElementById("display").innerHTML = "Clicks: " + clicks
 			return;
@@ -36,10 +36,10 @@
 	function docWrite(variable) {document.write(variable);}
 
 	function multi() {
-		var clicks = clicked.clicks
+		this.clicks = clicked.clicks
 		if clicks >= cost; {
 			clicks = clicks - (cost)
-			multiplyer = multiplyer + 1
+			this.multiplyer = multiplyer + 1
 			cost = cost + 100
 			document.getElementById("display-2").innerHTML = "Multi: " + multiplyer
             return;
@@ -56,8 +56,8 @@
 
 <button class="sec-btn" type="button" onclick="clicked()"> Click </button>
 <button class="big-btn" type="button" onclick="multi()"> multiplier </button>
-<div class="center"> <header id="display"> Clicks: <script type="text/javascript">document.Write(clicks)</script></header> </div>
-<div class="right"> <header id="display-2"> Multi: <script type="text/javascript">document.Write(multiplyer)</script></header> </div>
+<div class="center"> <header id="display"> Clicks: <script type="text/javascript">document.Write(clicked.clicks)</script></header> </div>
+<div class="right"> <header id="display-2"> Multi: <script type="text/javascript">document.Write(multi.multiplyer)</script></header> </div>
 
 </body>
 </html>
