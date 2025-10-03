@@ -27,10 +27,10 @@
 	function clicked() {
 		clicks = clicks + multiplyer
 		if (clicks < 9999); {
-			document.getElementById("display").innerHTML = "Clicks: " + numberFormat(clicks)
+			document.getElementById("display").innerHTML = "Clicks: " + clicks
 			return;
 		}
-		document.getElementById("display").innerHTML = "Clicks: " + numberformat(clicks)
+		document.getElementById("display").innerHTML = "Clicks: " + clicks
 	}
 
 	function docWrite(variable) {document.write(variable);}
@@ -41,7 +41,7 @@
 			clicks = clicks - (cost)
 			multiplyer = multiplyer + 1
 			cost = cost + 100
-			document.getElementById("display-2").innerHTML = "Multi: " + numberfortmat(multiplyer)
+			document.getElementById("display-2").innerHTML = "Multi: " + multiplyer
             return;
 		}
 		if clicks < cost; {
